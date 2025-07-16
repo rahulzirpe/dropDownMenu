@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Prescriber Selection</title>
+  <script src="index.js" type="text/javascript"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f2f6ff, #e6eeff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 2rem 3rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #444;
+    }
+
+    select {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    select:focus {
+      outline: none;
+      border-color: #4a90e2;
+      box-shadow: 0 0 4px #a3c9f9;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #4a90e2;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #357ac9;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form-container">
+    <h2>Select a Prescriber</h2>
+    <form>
+      <label for="prescriber">Please select the Prescriber:</label>
+      <select id="prescriber" name="prescriber">
+        <option value="">-- Select Prescriber --</option>
+        <option value="Dr. John Smith">Dr. John Smith</option>
+        <option value="Dr. Emily Carter">Dr. Emily Carter</option>
+        <option value="Dr. Rajeev Nair">Dr. Rajeev Nair</option>
+        <option value="Dr. Olivia Johnson">Dr. Olivia Johnson</option>
+        <option value="Dr. Michael Chen">Dr. Michael Chen</option>
+        <option value="Dr. Sophia Patel">Dr. Sophia Patel</option>
+        <option value="Dr. James Anderson">Dr. James Anderson</option>
+        <option value="Dr. Lisa Martinez">Dr. Lisa Martinez</option>
+        <option value="Dr. David Lee">Dr. David Lee</option>
+        <option value="Dr. Ayesha Khan">Dr. Ayesha Khan</option>
+        <option value="Prescriber is not listed">Prescriber is not listed</option>
+      </select>
+
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
