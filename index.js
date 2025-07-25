@@ -54,5 +54,7 @@ async function postData(url = '', auth, data = {}) {
         {"name": "prescriber", "value": prescriber}
       ],
     });
-    document.querySelector('.lpc_slider-header__minimize-button-asset').click();  
+    window.parent.postMessage({
+                action: "buttonClicked"
+            }, "*"); 
   }
